@@ -1,0 +1,29 @@
+<!-- Pricing Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing"
+     data-sly-use.details="com.adobe.aem.ninilasolutions.nkssolutions.core.models.PricingDetails" data-asly-test="${details.pricecomp}">
+      <h2>${details.headline}</h2>
+      <p>${details.description}</p>
+      <br />
+      
+      <div class="w3-third w3-margin-bottom" data-sly-repeat="${details.pricecomp}">
+        <ul class="w3-ul w3-border w3-hover-shadow">
+          <li class="w3-theme">
+            <p class="w3-xlarge">${item.type}</p>
+          </li>
+          <li class="w3-padding-16"><b>${item.storage}</b></li>
+          <li class="w3-padding-16"><b>${item.emails}</b></li>
+          <li class="w3-padding-16"><b>${item.support}</b></li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide"><i class="fa fa-usd"></i>${item.price}</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-theme-l5 w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large">
+              <i class="fa fa-check"></i> ${item.buttontext}
+            </button>
+          </li>
+        </ul>
+      </div>
+    
+</div>
+      

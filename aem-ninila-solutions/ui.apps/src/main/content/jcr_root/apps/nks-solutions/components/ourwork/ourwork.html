@@ -1,0 +1,11 @@
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work" 
+     data-sly-use.about="com.adobe.aem.ninilasolutions.nkssolutions.core.models.AboutUs"
+     data-sly-use.descriptionCard="descriptionCard.html">
+      <div class="w3-quarter">
+        <h2>${about.ourwork}</h2>
+        <p>${about.aboutus}</p>
+      </div>
+      
+      <sly data-sly-repeat="${about.work}" data-sly-call="${descriptionCard.description @ card = item}"></sly>
+</div>

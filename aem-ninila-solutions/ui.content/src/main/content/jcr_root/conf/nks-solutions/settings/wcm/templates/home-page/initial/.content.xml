@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-06-15T18:27:22.534+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/nks-solutions/settings/wcm/templates/home-page"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="nks-solutions/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="nks-solutions/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="nks-solutions/components/container"
+                layout="responsiveGrid">
+                <teaser
+                    jcr:created="{Date}2022-06-15T18:21:46.706+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-06-15T18:22:41.099+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="link.com"
+                    sling:resourceType="nks-solutions/components/teaser"
+                    actionsEnabled="false"
+                    descriptionFromPage="false"
+                    fileReference="/content/dam/nks-solutions/sailboat.jpg"
+                    textIsRich="true"
+                    titleFromPage="false"/>
+                <teamcard_copy
+                    jcr:created="{Date}2022-06-13T15:02:23.786+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-06-14T13:41:30.933+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="nks-solutions/components/teamcard"
+                    aboutteam="Meet the team - our office rats:"
+                    ourteam="OUR TEAM">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            behavior="newline"
+                            offset="0"
+                            width="12"/>
+                    </cq:responsive>
+                    <members jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            designation="Web Designer"
+                            image="/content/dam/nks-solutions/avatar.jpg"
+                            name="Johnny Walker"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            designation="Support"
+                            image="/content/dam/nks-solutions/avatar.jpg"
+                            name="Rebecca Flexr"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            designation="Manager"
+                            image="/content/dam/nks-solutions/avatar.jpg"
+                            name="Jan Ringo"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            designation="CEO"
+                            image="/content/dam/nks-solutions/avatar.jpg"
+                            name="Kai Ringo"/>
+                    </members>
+                </teamcard_copy>
+                <ourwork_copy
+                    jcr:created="{Date}2022-06-13T15:55:10.238+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-06-13T16:47:03.850+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="nks-solutions/components/ourwork"
+                    aboutus="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    ourwork="Our Work"
+                    text="Trade 1">
+                    <work jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            description1="Customer 1"
+                            description2="Trade 1"
+                            description3="BlaBlaBla"
+                            image="/content/dam/nks-solutions/snow.jpg"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            description1="Customer 2"
+                            description2="Trade 2"
+                            description3="BlaBlaBla"
+                            image="/content/dam/nks-solutions/lights.jpg"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            description1="Customer 3"
+                            description2="Trade 3"
+                            description3="BlaBlaBla"
+                            image="/content/dam/nks-solutions/mountains.jpg"/>
+                    </work>
+                </ourwork_copy>
+                <pricing
+                    jcr:created="{Date}2022-06-14T13:48:52.370+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-06-15T18:12:45.006+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="nks-solutions/components/pricing"
+                    description="Choose a pricing plan that fits your needs"
+                    headline="PRICING">
+                    <pricing jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            buttontext="Sign Up"
+                            emails="10 Emails"
+                            price="10"
+                            storage="10GB Storage"
+                            support="Endless Support"
+                            type="Basic"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            buttontext="Sign Up"
+                            emails="25 Emails"
+                            price="$25"
+                            storage="25GB Storage"
+                            support="Endless Support"
+                            type="Pro"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            buttontext="Sign Up"
+                            emails="50 Emails"
+                            price="$50"
+                            storage="50GB Storage"
+                            support="Endless Support"
+                            type="Premium"/>
+                    </pricing>
+                </pricing>
+                <image
+                    jcr:created="{Date}2022-06-15T18:27:10.249+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-06-15T18:27:22.530+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="nks-solutions/components/image"
+                    altValueFromDAM="true"
+                    displayPopupTitle="true"
+                    fileReference="/content/dam/nks-solutions/map.jpg"
+                    isDecorative="false"
+                    titleValueFromDAM="true"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

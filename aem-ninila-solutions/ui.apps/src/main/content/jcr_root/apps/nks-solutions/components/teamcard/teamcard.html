@@ -1,0 +1,17 @@
+<!-- Team Container -->
+ <div class="w3-container w3-padding-64 w3-center" id="team" 
+      data-sly-use.card="com.adobe.aem.ninilasolutions.nkssolutions.core.models.TeamMembers" data-asly-test="${card.members}">
+      <h2>${card.ourteam}</h2>
+      <p>${card.aboutteam}</p>
+
+      <div class="w3-row"><br/>
+		
+	  <div class=card data-sly-repeat="${card.members}">
+	    <div class="w3-quarter">
+			<img src="${item.image}" alt="memberImage" style="width: 45%" class="w3-circle w3-hover-opacity">
+			<h3>${item.name}</h3>
+			<p>${item.designation}</p>
+	    </div>
+     </div>
+   </div>
+</div>
